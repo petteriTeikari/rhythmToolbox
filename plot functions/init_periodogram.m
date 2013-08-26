@@ -28,6 +28,9 @@ function handles = init_periodogram(handles, param_imp)
         handles.figHandles.fft_xlab(j) = xlabel('Period [h]');
         handles.figHandles.fft_ylab(j) = ylabel('Power');
 
+        figHandles.fft_leg = legend('Fast', 'Exact', 2);
+            legend('boxoff')
+        
 
     % xxx
     j = 2;
@@ -35,7 +38,7 @@ function handles = init_periodogram(handles, param_imp)
         handles.figHandles.fft(j,1) = plot(NaN, NaN);
         set(handles.figHandles.fft(j,1), 'Color', handles.plotSettings.colorBlueLight);
         handles.figHandles.fft_tit(j) = title('');
-        handles.figHandles.fft_xlab(j) = xlabel('Frequency [Hz]');
+        handles.figHandles.fft_xlab(j) = xlabel('Period [h]');
         handles.figHandles.fft_ylab(j) = ylabel('Amplitude');
 
     % xxx
@@ -56,5 +59,5 @@ function handles = init_periodogram(handles, param_imp)
 
         set(handles.figHandles.fft(j,3), 'LineWidth', 2, 'Color', handles.plotSettings.colorBlueLight)
 
-    set([handles.figHandles.fft_tit handles.figHandles.fft_xlab handles.figHandles.fft_ylab],...
+    set([handles.figHandles.fft_tit handles.figHandles.fft_xlab handles.figHandles.fft_ylab figHandles.fft_leg],...
         'FontName', handles.plotSettings.fontName, 'FontSize', handles.plotSettings.fontSize_base)

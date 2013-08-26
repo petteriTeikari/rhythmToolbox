@@ -64,7 +64,7 @@ function plot_sleepScoring(data_group, data_imp, style, handles)
         
     % autosave the figure      
     if style.imgOutautoSavePlot == 1            
-        fileNameOut = ['dfaAnalysis_', strrep(handles.importSettings.inputFile, '.txt', ''), '.png'];
+        fileNameOut = ['sleepScoring_', strrep(handles.importSettings.inputFile, '.txt', ''), '.png'];
         cd(handles.path.figuresOut)
         saveToDisk(fig, fullfile(handles.path.figuresOut, fileNameOut), style)
         % cd(handles.path.mainCode)

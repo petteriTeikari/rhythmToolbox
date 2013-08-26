@@ -35,8 +35,8 @@ function handles = update_periodogram(handles, data_comp, data_group, data_imp)
 
 
     % subplot 2
-        set(handles.figHandles.fft(2,1), 'XData', data_comp.all.periodg_x.fft, 'YData', data_comp.all.periodg_Pxx.fft)
-        set(handles.figHandles.fft_sp(2), 'XLim', handles.plotSettings.fft_freqLimits)
+        set(handles.figHandles.fft(2,1), 'XData', 1 ./ data_comp.all.periodg_x.fft / 60 / 60, 'YData', data_comp.all.periodg_Pxx.fft)
+        set(handles.figHandles.fft_sp(2), 'XLim', handles.plotSettings.fft_PeriodLimits)
         set(handles.figHandles.fft_tit(2), 'String', ['FFT Amplitude Spectrum, nfft = ', num2str(length(data_comp.all.periodg_Pxx.fft))])
 
 
