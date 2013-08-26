@@ -1,0 +1,37 @@
+ans =
+
+    12     1
+
+  Name       Size             Bytes  Class     Attributes
+
+  ans        1x2                 16  double              
+  f          1x801             6408  double              
+  t         12x1                 96  double              
+  y         12x1                 96  double              
+
+  Name                  Size             Bytes  Class     Attributes
+
+  defaultPeriod         1x1                  8  double              
+  difference            1x11                88  double              
+  frequencies           1x7                 56  double              
+  getRow                1x12                96  double              
+  iInputData            1x1                  8  double              
+  index                 1x12                96  double              
+  inputData           120x12             11520  double              
+  locs                  1x7                 56  double              
+  lower                 1x1                  8  double              
+  m                     1x1                  8  double              
+  maxFreq               1x1                  8  double              
+  minFreq               1x1                  8  double              
+  nInputData            1x1                  8  double              
+  peakIndex             1x1                  8  double              
+  peakSign            120x1                960  double              
+  periods             120x1              12160  cell                
+  periodsNum          100x1                800  double              
+  powers                1x801             6408  double              
+  tempRow               1x12                96  double              
+  tempTimePoints        1x12                96  double              
+  testFreqs             1x801             6408  double              
+  testPeriods           1x801             6408  double              
+  timepoints            1x12                96  double              
+  upper                 1x1                  8  double         
